@@ -1,0 +1,15 @@
+char '' are in only single quotes
+String(s) are in double quotes ""
+String needs to be capitalized and we can use special characters like new lines \n
+quotes \" \"
+new tab \t
+
+
+you can use $ num underscore _
+
+boolean is defined before when setting the data type
+
+final is const in JAVA
+
+
+casting  is when you change one value to another type of
