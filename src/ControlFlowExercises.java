@@ -16,6 +16,10 @@ public class ControlFlowExercises {
             System.out.println(x);
             x-=5;
         }
+        for (long i =2; i < 1000000; i++) {
+            System.out.println(i);
+            i*=i;
+        }
     }
     /*You have to design the code such that the user has only three tries to guess the correct pin of the account. You set the pin as a constant with a final attribute. When correct display "Correct, welcome back." When incorrect display "Incorrect, try again.". When user runs out of tries display "Sorry but you have been locked out."
 program Starts:
