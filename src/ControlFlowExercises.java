@@ -38,14 +38,20 @@ Output:
 Correct, welcome back.
  */
         Scanner scanner = new Scanner(System.in);
-        int pinNumber = 1221;
+        int pinNumber = 12345;
 
         for (int p =1; p <=3; p++) {
+            System.out.println("please enter your access pin");
             int attempt = scanner.nextInt();
-
-            if (attempt == pinNumber) {
-
+            if (attempt != pinNumber) {
+                System.out.println("Incorrect, try again");
+            } else if (attempt == pinNumber) {
+                System.out.println("Correct, Welcome Back");
+                break;
+            } else if (p == 3 && attempt != pinNumber) {
+                System.out.println("Sorry but you have been locked out");
             }
+
         }
     }
 
