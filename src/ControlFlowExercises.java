@@ -73,7 +73,8 @@ Correct, welcome back.
 //        } while (userInput2 != 0);
 //        System.out.println("thank you for playing");
         // #4
-        int userChoice = 0;
+
+        String userChoice = "";
         do {
             System.out.println("Hi please enter your final grade from 0-100");
             int finalGrade = scanner.nextInt();
@@ -90,12 +91,12 @@ Correct, welcome back.
             } else {
                 System.out.println("sorry I dont understand what that is :?");
             }
-            System.out.println("would you like to continue? 1 for yes // 0 for no");
-            userChoice = scanner.nextInt();
-            if (userChoice == 1) {
+            System.out.println("would you like to continue?  yes or  no");
+            userChoice = scanner.next();
+            if (userChoice.equals("no")) {
 
             }
-        } while (userChoice == 0);
+        } while (userChoice.equals("yes"));
         System.out.println("Thank you for participating");
     }
 
