@@ -64,7 +64,7 @@ Correct, welcome back.
 //            System.out.println("------ | ------- | -----");
 //
 //            for (i = 1; i <= userInput; i++)
-//                System.out.println("" + i + "\t  |\t" + Math.pow(i, 2) + "\t |\t" + (Math.pow(i, 3)));
+//                System.out.println("%-7d| %-8d| %-5d%n", i, i*i, i*i*i);
 //            System.out.println("would you like to conitinue? 0 for no // 1 for yes ");
 //            userInput2 = scanner.nextInt();
 //            if (userInput2 == 1) {
@@ -75,6 +75,7 @@ Correct, welcome back.
         // #4
 
         String userChoice = "";
+        boolean uNoContinue = false;
         do {
             System.out.println("Hi please enter your final grade from 0-100");
             int finalGrade = scanner.nextInt();
@@ -94,7 +95,7 @@ Correct, welcome back.
             System.out.println("would you like to continue?  yes or  no");
             userChoice = scanner.next();
             if (userChoice.equals("no")) {
-
+                uNoContinue = true;
             }
         } while (userChoice.equals("yes"));
         System.out.println("Thank you for participating");
