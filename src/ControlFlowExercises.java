@@ -53,25 +53,50 @@ Correct, welcome back.
 //            }
 //        }
         //#3
-        int i = 0;
-        int userInput2 = 0;
+//        int i = 0;
+//        int userInput2 = 0;
+//        do {
+//            System.out.println("Please enter an integer");
+//            int userInput = scanner.nextInt();
+//            System.out.println("");
+//            System.out.println("Here is your table!");
+//            System.out.println("number | squared | cubed");
+//            System.out.println("------ | ------- | -----");
+//
+//            for (i = 1; i <= userInput; i++)
+//                System.out.println("" + i + "\t  |\t" + Math.pow(i, 2) + "\t |\t" + (Math.pow(i, 3)));
+//            System.out.println("would you like to conitinue? 0 for no // 1 for yes ");
+//            userInput2 = scanner.nextInt();
+//            if (userInput2 == 1) {
+//
+//            };
+//        } while (userInput2 != 0);
+//        System.out.println("thank you for playing");
+        // #4
+        int userChoice = 0;
         do {
-            System.out.println("Please enter an integer");
-            int userInput = scanner.nextInt();
-            System.out.println("");
-            System.out.println("Here is your table!");
-            System.out.println("number | squared | cubed");
-            System.out.println("------ | ------- | -----");
+            System.out.println("Hi please enter your final grade from 0-100");
+            int finalGrade = scanner.nextInt();
+            if (finalGrade >= 88 && finalGrade <= 100) {
+                System.out.println("you have an A!");
+            } else if (finalGrade >= 80) {
+                System.out.println("you have a B!");
+            } else if (finalGrade >= 67) {
+                System.out.println("you have a C ):");
+            } else if (finalGrade >= 60) {
+                System.out.println("you have a D really sad ");
+            } else if (finalGrade >= 0) {
+                System.out.println("you are failing. And need help! you have an F");
+            } else {
+                System.out.println("sorry I dont understand what that is :?");
+            }
+            System.out.println("would you like to continue? 1 for yes // 0 for no");
+            userChoice = scanner.nextInt();
+            if (userChoice == 1) {
 
-            for (i = 1; i <= userInput; i++)
-                System.out.println("" + i + "\t  |\t" + Math.pow(i, 2) + "\t |\t" + (Math.pow(i, 3)));
-            System.out.println("would you like to conitinue? 0 for no // 1 for yes ");
-            userInput2 = scanner.nextInt();
-            if (userInput2 == 1) {
-
-            };
-        } while (userInput2 != 0);
-        System.out.println("thank you for playing");
+            }
+        } while (userChoice == 0);
+        System.out.println("Thank you for participating");
     }
 
 }
