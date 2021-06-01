@@ -15,6 +15,24 @@ public class MethodsExercises {
         return num1%num2;
     }
 
+    public static int getInt(int min, int max) {
+        System.out.printf("enter a number between %d and %d", min, max);
+        System.out.println("");
+
+
+    }
+    public static int getInt(int min, int max) {
+        System.out.printf("enter a number between %d and %d", min, max);
+        System.out.println("");
+
+
+    } public static int getInt(int min, int max) {
+        System.out.printf("enter a number between %d and %d", min, max);
+        System.out.println("");
+
+
+    }
+
     public static void main(String[] args) {
         System.out.println(add(1, 2));
         System.out.println(subtract(5, 4));
