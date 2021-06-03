@@ -1,8 +1,10 @@
 import java.util.Arrays;
 
 public class ArraysExercises extends Person{
-    public static Person[] addPerson(Person[] arr, String name) {
-        return  Arrays.copyOf(arr, arr.length + 1);
+    public static Person[] addPerson(Person[] arr, Person addPerson) {
+        Person[] newArr = Arrays.copyOf(arr, arr.length + 1);
+        newArr[arr.length] = addPerson;
+        return newArr;
     }
     public static void main(String[] args) {
         int[] numbers = {1, 2, 3, 4, 5};
