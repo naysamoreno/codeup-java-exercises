@@ -20,5 +20,8 @@ public class BirdTest {
         penguin.makeNoise();
         penguin.move();
 
+        Bird myPenguin = new Penguin();
+
     }
+
 }

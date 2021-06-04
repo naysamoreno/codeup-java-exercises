@@ -1,2 +1,5 @@
-package PACKAGE_NAME;public class BirdVet {
+public class BirdVet {
+    public void careForBird(Bird birdPatient){
+        birdPatient.makeNoise();
+    }
 }
