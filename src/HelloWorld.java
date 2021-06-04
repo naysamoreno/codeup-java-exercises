@@ -20,8 +20,15 @@ public class HelloWorld {
 //        int x = 5;
 //        System.out.println(x++);
 //        System.out.println(x);
-        int x = 5;
-        System.out.println(++x);
-        System.out.println(x);
+//        int x = 5;
+//        System.out.println(++x);
+//        System.out.println(x);
+//        int x = 4;
+//        x += 5;
+//        int x = 3;
+//        int y = 4;
+//        y *= x;
+
     }
+
 }

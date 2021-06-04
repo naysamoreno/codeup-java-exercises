@@ -25,6 +25,7 @@ public class ConsoleExercises {
 
         System.out.println("please give both the length and width and height");
         sentence = scanner.nextLine();
+        scanner.useDelimiter("\n");
 
         String[] stringArray = sentence.split(" ", 3);
         double length = Double.parseDouble(stringArray[0]);
