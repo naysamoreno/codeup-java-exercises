@@ -13,7 +13,7 @@ public class Input {
         return this.scanner.nextLine();
     }
 
-    boolean YesNo() {
+    boolean yesNo() {
         String userInput = this.scanner.nextLine();
         if (userInput.equalsIgnoreCase("y") || userInput.equalsIgnoreCase("yes")) {
             return true;

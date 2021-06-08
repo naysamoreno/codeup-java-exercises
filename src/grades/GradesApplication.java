@@ -3,10 +3,11 @@ import java.util.HashMap;
 import java.util.Map;
 import util.Input;
 
+
 public class GradesApplication {
 
     private final Map<String, Student> students;
-    private final Input input;
+    public static Input input;
 
     public void welcome() {
         System.out.println("Welcome!");
@@ -20,6 +21,13 @@ public class GradesApplication {
             System.out.println(getStudentInfo(response));
         } else {
             System.out.println("\nSorry, no student found with the GitHub username of " + response);
+        }
+        System.out.println("\nWould you like to enter a new response?");
+        boolean willContinue = input.yesNo();
+        if (willContinue) {
+            runInteraction();
+        } else {
+            System.out.println("\nGoodbye!");
         }
     }
     private String getStudentsList() {
