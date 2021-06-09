@@ -35,6 +35,7 @@ public class Input {
 
     public int getInt(int num) {
         return num;
+
     }
 
     public double getDouble(double min, double max) {
@@ -52,10 +53,30 @@ public class Input {
         double userInput = this.scanner.nextDouble();
         return userInput;
     }
-
+    public int getInt2(){
+        try {
+            return Integer.parseInt(getString());
+        } catch (NumberFormatException e) {
+            System.err.println("Invalid input, try again.");
+            return getInt2();
+        }
+    }
+    public double getDouble2(){
+        System.out.println("double down let me see your number");
+        String userInput = scanner.nextLine();
+        try{
+            Double.valueOf(userInput);
+        }catch(NumberFormatException nfe){
+            System.out.println("That's not a number, please try again");
+            getDouble2();
+        }
+        return Double.parseDouble(userInput);
+    }
 
     public static void main(String[] args) {
         Input in = new Input();
-        System.out.println(in.getString());
+//        System.out.println(in.getString());
+        System.out.println(in.getDouble2());
+
     }
 }
