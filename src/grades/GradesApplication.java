@@ -23,6 +23,7 @@ public class GradesApplication {
             System.out.println("\nSorry, no student found with the GitHub username of " + response);
         }
         System.out.println("\nWould you like to enter a new response?");
+        Input input = new Input();
         boolean willContinue = input.yesNo();
         if (willContinue) {
             runInteraction();
@@ -58,19 +59,18 @@ public class GradesApplication {
         user1.addGrade(98);
         user1.addGrade(72);
         user1.addGrade(85);
+        students.put("bestcoast323", user1);
 
         Student user2 = new Student("Chaz");
         user2.addGrade(98);
         user2.addGrade(100);
         user2.addGrade(95);
+        students.put("Toroymoi", user2);
 
         Student user3= new Student("Kevin");
         user3.addGrade(92);
         user3.addGrade(75);
         user3.addGrade(95);
-
-        students.put("bestcoast323", user1);
-        students.put("Toroymoi", user2);
         students.put("Kparker", user3);
 
         return students;

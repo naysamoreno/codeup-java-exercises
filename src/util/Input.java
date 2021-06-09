@@ -13,7 +13,7 @@ public class Input {
         return this.scanner.nextLine();
     }
 
-    boolean yesNo() {
+    public boolean yesNo() {
         String userInput = this.scanner.nextLine();
         if (userInput.equalsIgnoreCase("y") || userInput.equalsIgnoreCase("yes")) {
             return true;
@@ -22,7 +22,7 @@ public class Input {
         }
     }
 
-    int getInt(int min, int max) {
+    public int getInt(int min, int max) {
         System.out.printf("Enter a number between %d and %d%n", min, max);
         int userInput = scanner.nextInt();
         if (userInput >= min && userInput <= max) {
@@ -33,7 +33,7 @@ public class Input {
         }
     }
 
-    int getInt(int num) {
+    public int getInt(int num) {
         return num;
     }
 

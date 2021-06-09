@@ -1,2 +1,5 @@
-package annotations;public interface Food {
+package annotations;
+
+public interface Food {
+//    public String taste;
 }

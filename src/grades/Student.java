@@ -1,11 +1,13 @@
 package grades;
 
+import org.w3c.dom.ls.LSOutput;
+
 import java.util.ArrayList;
 
 public class Student {
 
     private String name;
-    private ArrayList<Integer> grades = new ArrayList<>();
+    private ArrayList<Integer> grades;
 
 
     public Student(String name) {
@@ -28,7 +30,12 @@ public class Student {
         return gradeAvg;
     }
 public static void main(String[] args) {
-    System.out.println();
+    Student Austin = new Student("Austin");
+
+    Austin.addGrade(95);
+    Austin.addGrade(100);
+    Austin.addGrade(98);
+    System.out.println(Austin.getGradeAverage());
 }
 
 }
