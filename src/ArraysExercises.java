@@ -28,5 +28,12 @@ public class ArraysExercises extends Person{
         for (Person person : people) {
             System.out.println(person.getName());
         }
+        System.out.println("----------------");
+        Person austin = new Person(("Austin"));
+        people = addPerson(people, austin);
+
+        for (Person person : people) {
+            System.out.println(person.getName());
+        }
     }
 }
