@@ -1,0 +1,20 @@
+The class definition
+
+
+public class Main {
+This defines a class. When writing Java code, you should have one class in each .java source file, and the name of the class should be the same as the name of the file.
+
+In this example, our class is named Main, so we would have this source code in a file named Main.java.
+
+the main method
+
+
+public static void main(String[] args) {
+This defines our main method, which is the entry point into our application. For the time being, we will write all of our code here, but, later on, when we define other methods and classes, they will be called from the main method.
+
+Binary vs. Unary
+
+An arithmetic expression consists of operands and arithmetic operators.
+Binary operators operate on two operands
+Unary operators operate on one operand
+
