@@ -32,6 +32,7 @@ public class HighLow {
     }
 
     public static void main(String[] args) {
-        HighLow(10);
+//        HighLow(10);
+        HighLow(5);
     }
 }
